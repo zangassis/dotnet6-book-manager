@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "f26f75b6-a08d-4af0-9aa4-ab04664a4d99",
+		"name": "BookManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"title\": \"The Lessons of History\",\r\n  \"author\": \"Will & Ariel Durant\",\r\n  \"description\": \"Will and Ariel Durant have succeeded in distilling for the reader the accumulated store of knowledge and experience from their five decades of work on the eleven monumental volumes of The Story of Civilization...\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7103/v1/books",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"id\": \"d7b489db-4765-42d7-8f25-9cd5c65d95d4\",\r\n \"title\": \"Managing all over\",\r\n \"author\": \"Peter Ducker\",\r\n \"description\": \"We live in an age of unprecedented opportunity: with ambition, drive, and talent, you can rise to the top of your chosen profession, regardless of where you started out...\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7103/v1/books",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7103/v1/books",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7103/v1/books/book?id=D7B489DB-4765-42D7-8F25-9CD5C65D95D4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"v1",
+						"books",
+						"book"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "D7B489DB-4765-42D7-8F25-9CD5C65D95D4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7103/v1/books?id=a8055d46-7545-4c5f-9d97-55d25eb215f9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7103",
+					"path": [
+						"v1",
+						"books"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "a8055d46-7545-4c5f-9d97-55d25eb215f9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
